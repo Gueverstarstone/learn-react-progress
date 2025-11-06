@@ -1,3 +1,4 @@
+ //props are values passed to components to make them dynamic
  function User(props) {
   return (
     <div>
