@@ -1,12 +1,12 @@
 //Destructuring props
- function User(props) {
-    console.log(props)
+ function User({name, message, emoji}) {
     //destructuring using props
-    const { name ,message } = props;
   return (
     <div>
       {/* replace props */}
-      <h1>{message} {name}</h1>
+      <h1>
+        {message} {name} {emoji}
+      </h1>
     </div>
   )
 }
