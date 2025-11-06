@@ -1,8 +1,12 @@
- //props are values passed to components to make them dynamic
+//Destructuring props
  function User(props) {
+    console.log(props)
+    //destructuring using props
+    const { name ,message } = props;
   return (
     <div>
-      <h1>{props.message} {props.name}</h1>
+      {/* replace props */}
+      <h1>{message} {name}</h1>
     </div>
   )
 }
