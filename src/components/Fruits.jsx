@@ -1,6 +1,7 @@
 import React from "react";
+import Fruit from "./Fruit";
 
-//Rendering arrays or lists in react
+//Rendering components inside a loop
 export default function Fruits() {
   // const fruits = ["mango", "orange", "pineapple"];
   const fruits = [
@@ -13,9 +14,12 @@ export default function Fruits() {
     <div>
       <ul>
         {fruits.map((fruit) => (
-          <li key={fruit.name}>
-            {fruit.emoji} {fruit.name} ${fruit.price}
-          </li>
+          <Fruit
+            key={fruit.name}
+            name={fruit.name}
+            price={fruit.price}
+            emoji={fruit.emoji}
+          />
         ))}
       </ul>
     </div>
