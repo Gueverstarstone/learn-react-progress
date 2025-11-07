@@ -1,20 +1,13 @@
 import React from "react";
-
+import Code from "./Code";
+import Welcome from './Welcome'
 //conditionally rendering jsx & components
-// 1. jsx
+//Components
 export default function ConditionalComponent() {
-  const displayHead = false;
+  const displayHead = true;
   if (displayHead) {
-    return (
-      <div>
-        <h3>This is a conditional components</h3>
-      </div>
-    );
+    return <Code />;
   } else {
-    return (
-      <div>
-        <h3>Code everyday!</h3>
-      </div>
-    );
+    return <Welcome />;
   }
 }
